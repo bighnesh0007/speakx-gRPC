@@ -1,4 +1,3 @@
-Here is an example `README.md` file that provides step-by-step instructions on how to run the server and client for your project, along with installing necessary npm packages.
 
 ```markdown
 # gRPC Search Questions Application
