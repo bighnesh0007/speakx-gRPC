@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package questsearch;
+
+service QuestSearch {
+  rpc SearchQuestionsByTitle (SearchRequest) returns (SearchResponse) {}
+}
+
+message SearchRequest {
+  string title = 1;
+  int32 page = 2;
+  int32 pageSize = 3;
+}
+
+message Block {
+  string text = 1;
+  bool showInOption = 2;
+  bool isAnswer = 3;
+}
+
+message Option {
+  string text = 1;
+  bool isCorrectAnswer = 2;
+}
+
+message Question {
+  string id = 1;
+  string type = 2;
+  string anagramType = 3;
+  repeated Block blocks = 4;
+  string siblingId = 5;
+  string solution = 6;
+  string title = 7;
+  repeated Option options = 8;
+}
+
+message SearchResponse {
+  repeated Question questions = 1;
+  int32 totalCount = 2;
+  int32 totalPages = 3;
+}
+
