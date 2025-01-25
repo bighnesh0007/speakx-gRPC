@@ -1,0 +1,21 @@
+{
+  "name": "questsearch-backend",
+  "version": "1.0.0",
+  "description": "Backend for QuestSearch using Node.js, gRPC, and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.14",
+    "@grpc/proto-loader": "^0.7.7",
+    "dotenv": "^16.0.3",
+    "mongodb": "^5.5.0",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
