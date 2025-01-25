@@ -40,7 +40,7 @@ npm start
 
 ```bash
 cd client
-npm start
+npm run dev
 ```
 
 ## API Endpoint: `/api/search`
